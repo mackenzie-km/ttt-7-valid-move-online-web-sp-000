@@ -1,11 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if index >= board.length 
-    false
-  elsif index < 1 
-    false
-  else
-    true
+  index.between(1,9)
   end
 end
 
